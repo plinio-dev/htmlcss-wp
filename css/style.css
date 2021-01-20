@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* contenitore principale centrato */
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+/* intestazione */
+header {
+  width: 100%;
+}
+
+header a {
+  height: 70px;
+  width: 300px;
+
+}
+.logo {
+  display: inline-block;
+  height: 70px;
+  width: 300px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* end intestazione */
+
+header, .hero {
+  margin-bottom: 25px;
+}
+
+.hero {
+  width: 100%;
+  height: 450px;
+  background-color: yellow;
+}
+
+
+/* sezione centrale  */
+
+section {
+  width: 100%;
+  background-color: blue;
+}
+
+.box-titolo {
+  width: 100%;
+  height: 80px;
+  background-color: lightblue;
+  margin-bottom: 25px;
+}
+
+.row {
+  width: 100%;
+  height: 825px;
+}
+
+.col-left, .col-right {
+  float: left;
+  width: 25%;
+  height: 800px;
+  background-color: lightblue;
+}
+
+.col-center {
+  float: left;
+  height: 800px;
+  width: 46%;
+  background-color: lightblue;
+  margin: 0 2%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* end sezione centrale  */
+
+footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 15px;
+  background-color: violet;
+}
