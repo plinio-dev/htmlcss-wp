@@ -13,15 +13,13 @@ header {
   width: 100%;
 }
 
-header a {
+header a, .logo {
   height: 70px;
-  width: 300px;
+  width: 150px;
 
 }
 .logo {
   display: inline-block;
-  height: 70px;
-  width: 300px;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
