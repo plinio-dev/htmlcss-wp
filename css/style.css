@@ -11,6 +11,7 @@ body {
   width: 60%;
   margin: auto;
 }
+
 /* intestazione */
 header {
   width: 100%;
@@ -24,7 +25,6 @@ header > div {
 
 img {
   width: 100%;
-
 }
 
 nav {
@@ -44,7 +44,6 @@ a {
  a:hover {
   color: hsl(17deg 17% 75%);
 }
-
 /* end intestazione */
 
 /* hero */
@@ -59,7 +58,7 @@ header, .hero {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: yellow;
+  /* background-color: yellow; */
   border-radius: 15px;
   position: relative;
   z-index: 0;
@@ -90,28 +89,30 @@ h2 {
   color: white;
 }
 
-p {
+.testo-hero p {
   font-size: 12pt;
   color: white;
   font-weight: 200;
 }
-
-
-
 /* end hero */
 
 /* sezione centrale  */
 
 section {
   width: 100%;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .box-titolo {
   width: 100%;
-  height: 80px;
-  background-color: lightblue;
+  /* height: 80px; */
+  /* background-color: lightblue; */
   margin-bottom: 25px;
+  color: black;
+}
+
+h1 {
+  font-size: 35px;
 }
 
 .row {
@@ -122,8 +123,53 @@ section {
 .col-left, .col-right {
   float: left;
   width: 25%;
-  height: 800px;
-  background-color: lightblue;
+  /* height: 800px; */
+  /* background-color: lightblue; */
+}
+
+.img-left, .img-center, .img-right {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+
+}
+
+.overlay-2 {
+  opacity: 0;
+  background-color: grey;
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  transition: .5s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.img-left:hover .overlay-2 {
+  opacity: 1;
+}
+
+.img-left {
+  background-image: url(../img/img-1.jpg);
+}
+.img-center {
+  background-image: url(../img/banner-2.jpg);
+}
+.img-right {
+  background-image: url(../img/img-3.jpg);
+}
+.col-left {
+  float: left;
+  width: 25%;
 }
 
 .col-center {
