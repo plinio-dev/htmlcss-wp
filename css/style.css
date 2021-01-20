@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 /* contenitore principale centrato */
 .wrapper {
   width: 80%;
@@ -13,7 +16,7 @@ header {
   width: 100%;
 }
 
-header a, .logo {
+header > a, .logo {
   height: 70px;
   width: 150px;
 
@@ -24,6 +27,28 @@ header a, .logo {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+nav {
+  margin-top: 20px;
+}
+
+ul {
+
+}
+
+li, a {
+  display: inline-block;
+  font-weight: 300;
+  color: #858585;
+  font-size: 12pt;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+ a:hover {
+  color: hsl(17deg 17% 75%);
+}
+
 /* end intestazione */
 
 header, .hero {
