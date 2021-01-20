@@ -41,7 +41,7 @@ li  {
 a {
   text-decoration: none;
 }
- a:hover {
+a:hover {
   color: hsl(17deg 17% 75%);
 }
 /* end intestazione */
@@ -201,6 +201,15 @@ h1 {
   opacity: 1;
 }
 
+h4 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.col-left p, .col-right p, .col-center p {
+  font-weight: lighter;
+  color: #929292;
+}
 .col-left {
   float: left;
   width: 25%;
