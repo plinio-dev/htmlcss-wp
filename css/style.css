@@ -16,17 +16,21 @@ header {
   width: 100%;
 }
 
-header > a, .logo {
+header > div {
   height: 70px;
   width: 150px;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
 
 }
-.logo {
-  display: inline-block;
+/* .logo {
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 nav {
   margin-top: 20px;
@@ -36,31 +40,37 @@ ul {
 
 }
 
-li, a {
+li  {
   display: inline-block;
   font-weight: 300;
   color: #858585;
   font-size: 12pt;
   margin-right: 10px;
+}
+a {
   text-decoration: none;
 }
-
  a:hover {
   color: hsl(17deg 17% 75%);
 }
 
 /* end intestazione */
 
+/* inizio hero */
 header, .hero {
   margin-bottom: 25px;
 }
 
 .hero {
   width: 100%;
-  height: 450px;
+  height: 500px;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
   background-color: yellow;
 }
-
+/* end inizio hero */
 
 /* sezione centrale  */
 
