@@ -82,16 +82,17 @@ header, .hero {
   left: 5%;
 }
 
-h2 {
-  font-size: 22pt;
+h2, .testo-hero p {
   font-weight: 200;
   color: white;
 }
 
+h2 {
+  font-size: 22pt;
+}
+
 .testo-hero p {
   font-size: 12pt;
-  color: white;
-  font-weight: 200;
 }
 /* end hero */
 
@@ -99,7 +100,6 @@ h2 {
 
 section {
   width: 100%;
-  /* background-color: blue; */
 }
 
 .box-titolo {
@@ -155,28 +155,9 @@ h1 {
   background-image: url(../img/img-3.jpg);
   position: relative;
 }
+/* effetto hover + overlay  */
 
-.img-left::before {
-  background-color: rgba(0, 0, 0, 0.2);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.img-center::before {
-  background-color: rgba(0, 0, 0, 0.2);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.img-right::before {
+.img-left::before, .img-center::before, .img-right::before {
   background-color: rgba(0, 0, 0, 0.2);
   content: '';
   display: block;
@@ -203,8 +184,8 @@ h1 {
 .img-left:hover .overlay-2, .img-right:hover .overlay-2, .img-center:hover .overlay-2 {
   opacity: 1;
 }
-/* effetto hover  */
-
+/* /effetto hover + overlay  */
+   
 /* testo sotto immagini */
 h4 {
   font-weight: 400;
